@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/408/889/original/illustration-of-data-analysis-graph-vector.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Source Code Pro", monospace;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: #fff;
+  padding: 1em;
+  border-radius: 20px 50px / 50px 20px;
+}
+
+.headings {
+  text-align: center;
+  padding: 1em;
+}
+
+.headings > h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.inputs {
+  text-align: center;
+  padding: 1.25em;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+  margin: 0.875em auto;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number > input {
+  width: 15em;
+  height: 2.5em;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 50px 25px / 25px 50px;
+  padding: 0.625em;
+  font-style: 1.25em;
+  text-align: center;
+}
+
+.number > h4 {
+  padding: 0.5em 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+button {
+  width: 9em;
+  height: 3.5em;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 20px 50px / 50px 20px;
+  cursor: pointer;
+  font-size: 0.875em;
+}
+
+button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.result {
+  text-align: center;
+  padding: 1em;
+}
+
+.result > p {
+  font-size: 1.25em;
+  margin: 0.625em 0;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .number > h4 {
+    text-align: center;
+  }
+}
